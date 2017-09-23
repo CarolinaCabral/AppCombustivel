@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:backgroundTint="@color/colorPrimary"
+    tools:context="com.example.carolinacabral.appcombustivel.MainActivity">
+
+    <TextView
+        android:id="@+id/txtEtanol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="48dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="66dp"
+        android:autoText="false"
+        android:text="ETANOL:"
+        android:textColor="@android:color/background_dark"
+        android:textColorLink="@android:color/black" />
+
+    <TextView
+        android:id="@+id/txtGasolina"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="67dp"
+        android:text="GASOLINA:"
+        android:textColor="@android:color/black"
+        android:layout_below="@+id/edtEtanol"
+        android:layout_alignLeft="@+id/txtEtanol"
+        android:layout_alignStart="@+id/txtEtanol" />
+
+    <EditText
+        android:id="@+id/edtEtanol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtEtanol"
+        android:layout_alignBottom="@+id/txtEtanol"
+        android:layout_alignLeft="@+id/edtGasolina"
+        android:layout_alignStart="@+id/edtGasolina"
+        android:background="@android:color/background_light"
+        android:ems="10"
+        android:hint="2,99"
+        android:inputType="numberDecimal"
+        android:padding="5dp" />
+
+    <EditText
+        android:id="@+id/edtGasolina"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtGasolina"
+        android:layout_alignBottom="@+id/txtGasolina"
+        android:layout_marginLeft="13dp"
+        android:layout_marginStart="13dp"
+        android:layout_toEndOf="@+id/txtGasolina"
+        android:layout_toRightOf="@+id/txtGasolina"
+        android:background="@android:color/background_light"
+        android:backgroundTint="@android:color/background_light"
+        android:ems="10"
+        android:hint="2,99"
+        android:inputType="numberDecimal"
+        android:padding="5dp" />
+
+    <Button
+        android:id="@+id/btnVerificar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/edtGasolina"
+        android:layout_alignLeft="@+id/txtGasolina"
+        android:layout_alignRight="@+id/edtGasolina"
+        android:layout_alignStart="@+id/txtGasolina"
+        android:layout_below="@+id/edtGasolina"
+        android:layout_marginTop="50dp"
+        android:background="@android:color/darker_gray"
+        android:text="VERIFICAR" />
+
+    <TextView
+        android:id="@+id/txtResultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/btnVerificar"
+        android:layout_alignLeft="@+id/btnVerificar"
+        android:layout_alignRight="@+id/btnVerificar"
+        android:layout_alignStart="@+id/btnVerificar"
+        android:layout_below="@+id/btnVerificar"
+        android:layout_marginTop="62dp"
+        android:text="RESULTADO:"
+        android:textColor="@android:color/background_dark" />
+
+</RelativeLayout>
